@@ -26,20 +26,9 @@ This project is a simple Flask server application that integrates with the OpenA
    git clone https://github.com/yourusername/flask-openai-postgres.git
    cd flask-openai-postgres
    
-2. Create a .env file in the root of the project directory and update it with your OpenAI API key and PostgreSQL database credentials. Use the provided template below:
+2. Create a .env.api-key file in the root of the project directory and update it with your OpenAI API key and PostgreSQL database credentials. Use the provided template below:
    #### OpenAI API Key
    OPENAI_API_KEY=your_openai_api_key_here
-
-   #### PostgreSQL Database URL
-   DATABASE_URL=postgresql+psycopg2://your_username:your_password@database:5432/your_database_name
-
-   #### PostgreSQL Database Credentials
-   POSTGRES_USER=your_username
-   POSTGRES_PASSWORD=your_password
-   POSTGRES_DB=your_database_name
-
-   #### Python Path
-   PYTHONPATH=/app:$PYTHONPATH
 
 3. Build and run the containers:
    #### docker-compose up --build
