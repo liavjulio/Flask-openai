@@ -48,9 +48,9 @@ This project is a simple Flask server application that integrates with the OpenA
 
 ### Test
 To run the tests, use the following command:
-docker-compose run web pytest
+#### docker-compose run web pytest
 
 ### Run
 To run the app , use the following command:
-curl -X POST http://localhost:8080/ask -H "Content-Type: application/json" -d '{"question": "Enter your question here?"}
+#### curl -X POST http://localhost:8080/ask -H "Content-Type: application/json" -d '{"question": "Enter your question here?"}
 
