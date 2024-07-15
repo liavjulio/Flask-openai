@@ -42,9 +42,9 @@ This project is a simple Flask server application that integrates with the OpenA
    PYTHONPATH=/app:$PYTHONPATH
 
 3. Build and run the containers:
-   docker-compose up --build
+   #### docker-compose up --build
 4. Apply Database Migrations
-   docker-compose run web alembic upgrade head
+   #### docker-compose run web alembic upgrade head
 
 ### Test
 To run the tests, use the following command:
