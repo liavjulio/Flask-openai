@@ -23,7 +23,7 @@ This project is a simple Flask server application that integrates with the OpenA
 ### Setup
 
 1. Clone the repository:
-   git clone https://github.com/yourusername/flask-openai-postgres.git
+   git clone https://github.com/liavjulio/flask-openai-postgres.git
    cd flask-openai-postgres
    
 2. Create a .env.api-key file in the root of the project directory and update it with your OpenAI API key and PostgreSQL database credentials. Use the provided template below:
