@@ -17,10 +17,10 @@ logger = logging.getLogger('alembic.env')
 
 def get_engine():
     try:
-        # this works with Flask-SQLAlchemy<3 and Alchemical
+
         return current_app.extensions['migrate'].db.get_engine()
     except (TypeError, AttributeError):
-        # this works with Flask-SQLAlchemy>=3
+
         return current_app.extensions['migrate'].db.engine
 
 
@@ -32,17 +32,17 @@ def get_engine_url():
         return str(get_engine().url).replace('%', '%%')
 
 
-# add your model's MetaData object here
+
 # for 'autogenerate' support
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
 config.set_main_option('sqlalchemy.url', get_engine_url())
 target_db = current_app.extensions['migrate'].db
 
-# other values from the config, defined by the needs of env.py,
-# can be acquired:
-# my_important_option = config.get_main_option("my_important_option")
-# ... etc.
+
+
+
+
 
 
 def get_metadata():
