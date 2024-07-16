@@ -1,6 +1,6 @@
 volumes:
-  postgres_data:  # Define the named volume
-    name: flask-volume  # Optionally, set a custom name for the volume
+  postgres_data: 
+    name: flask-volume  
 
 services:
   web:
@@ -20,4 +20,4 @@ services:
     env_file:
     - .env.dockersecrets
     volumes:
-      - postgres_data:/var/lib/postgresql/data  # Use the volume defined above
+      - postgres_data:/var/lib/postgresql/data 
