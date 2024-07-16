@@ -26,7 +26,7 @@ This project is a simple Flask server application that integrates with the OpenA
    git clone https://github.com/liavjulio/flask-openai-postgres.git
    cd flask-openai-postgres
    
-2. Create a .env.api-key file in the root of the project directory and update it with your OpenAI API key and PostgreSQL database credentials. Use the provided template below:
+2. Change a .env.api-key file in the root of the project directory and update it with your OpenAI API key and PostgreSQL database credentials. Use the provided template below:
    #### OpenAI API Key
    OPENAI_API_KEY=your_openai_api_key_here
 
