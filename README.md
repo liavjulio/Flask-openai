@@ -29,6 +29,8 @@ This project is a simple Flask server application that integrates with the OpenA
 2. Build and run the containers:
    #### docker-compose up --build
 
+3. edit the api env file to held your secret openai key.
+
 ### Test
 To run the tests, use the following command:
 #### docker-compose run web pytest
