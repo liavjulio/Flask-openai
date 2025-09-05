@@ -11,7 +11,9 @@ openai_client = None
 def create_app():
     global openai_client
 
-    app = Flask(__name__)
+    app = Flask(__name__, 
+                static_folder='static',
+                template_folder='templates')
     app.config.from_object('app.config.Config')
 
     logging.basicConfig(level=logging.DEBUG)
@@ -34,7 +36,7 @@ def create_app():
 
     with app.app_context():
         app.logger.debug("Creating all tables")
-        from .models import QnA
+        from .models import QnA, Conversation, Message
         db.create_all()
         app.logger.debug("All tables created")
     
